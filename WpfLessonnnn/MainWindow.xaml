@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfLessonnnn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLessonnnn" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <RepeatButton FontSize="30" Grid.Row="2" Click="RepeatButton_Click" >Down</RepeatButton>
+        <RepeatButton FontSize="30" Grid.Row="2" Grid.Column="2" Click="RepeatButton_Click_1" >Up</RepeatButton>
+        <ProgressBar Name="prgbar" Grid.Row="2" Grid.Column="1" Margin="20" Value="20" Background="Red" Foreground="Yellow"
+             
+                     ></ProgressBar>
+
+
+
+        <Slider Grid.Row="1" Grid.Column="1" Name="slider" Value="50" Minimum="0" Maximum="100"
+                Background="SpringGreen"     VerticalAlignment="Center"    
+                ></Slider>-->
+
+
+
+        <ListBox Name="lstbox" ScrollViewer.HorizontalScrollBarVisibility="Visible" Background="Bisque"   >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <!--<WrapPanel></WrapPanel>-->
+                    <VirtualizingStackPanel></VirtualizingStackPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <!--<Button></Button>
+            <Expander></Expander>
+            <sys:DateTime>1/2/2019</sys:DateTime>
+            <sys:DateTime>1/2/2019</sys:DateTime>
+            <sys:DateTime>1/2/2019</sys:DateTime>-->
+        </ListBox>
+
+
+    </Grid>
+</Window>
